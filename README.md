@@ -83,5 +83,5 @@ SIGN UP PAGE
 
 ## Demo
 
-https://github.com/user-attachments/assets/444dedc7-0e14-400d-be0e-ef4f5674bbee
+https://github.com/user-attachments/assets/825c5c16-fe7d-4f14-9845-25bf5f48aeec
 
