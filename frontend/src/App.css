@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  font-family: 'Arial', sans-serif;
+}
+
+.glass-container {
+  width: 400px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 3px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: #fff;
+}
+
+.glass-container input[type="text"],
+.glass-container input[type="password"],
+.glass-container input[type="email"],
+.glass-container button {
+  width: 80%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.glass-container input[type="text"],
+.glass-container input[type="password"],
+.glass-container input[type="email"] {
+  background: none;
+  border: none; /* Remove all borders */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35); /* Add only the bottom border */
+  color: #fff; /* Text color */
+  padding: 5px; /* Adds inner spacing */
+  margin-bottom: 10px; /* Space between inputs */
+  font-size: 16px; /* Ensure consistent font size */
+  box-sizing: border-box; /* Prevent resizing issues */
+  width: 100%; /* Optional: Adjust width if needed */
+}
+
+.glass-container input[type="text"]:focus,
+.glass-container input[type="password"]:focus,
+.glass-container input[type="email"]:focus {
+  outline: none; /* Removes the default focus outline */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8); /* Highlight the border on focus */
+}
+
+
+
+
+
+.glass-container button {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.glass-container button:hover {
+  background: linear-gradient(135deg, #9face6, #74ebd5);
+}
+
+.glass-container select {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  border: none; /* No border */
+  color: #fff; /* White text color */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+}
+
+.glass-container select option {
+  background-color:rgba(255, 255, 255, 0.3); /* Light background for options */
+  color: #333; /* Dark text color for better visibility */
+}
+
+.glass-container .gender label,.glass-container .course label{
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold; 
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.inline-select,.gender,.imageUpload{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inline-select select{
+  margin-left: 10px;
+}
+.imageUpload input{
+  margin-top: 10px;
+}
+
+
+.glass-container label{
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.glass-container .loginForm label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.glass-container h1{
+  padding:0;
+  margin-bottom: 7px;
+}
+
+.error {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  background: rgba(255, 0, 0, 0.1); /* Light red background for emphasis */
+  padding: 10px;
+  border: 1px solid rgba(255, 0, 0, 0.5); /* Subtle border */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  max-width: 80%; /* Ensures the error message doesn't stretch too wide */
+  margin-left: auto;
+  margin-right: auto; /* Centers the error box */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+
+/* Container for the whole welcome page */
+.welcome-container {
+  background: rgba(0, 0, 0, 0.6); /* Subtle background for the page */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Style for headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  color: #74ebd5;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+/* Buttons for logout and employee list */
+button {
+  background-color: #74ebd5;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #9face6;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Style for employee list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+ul li span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
